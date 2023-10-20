@@ -106,7 +106,7 @@ void SerialBusConnection::piSetBusSettings(int pBusIdx, CANBus bus)
     //TODO CHANGE DIS
     mDev_p->setConfigurationParameter(QCanBusDevice::CanFdKey, true);
     mDev_p->setConfigurationParameter(QCanBusDevice::BitRateKey, 125000);
-    mDev_p->setConfigurationParameter(QCanBusDevice::DataBitRateKey, 1000000);
+    mDev_p->setConfigurationParameter(QCanBusDevice::DataBitRateKey, 2000000);
 
     /* connect device */
     if (!mDev_p->connectDevice()) {
